@@ -1,0 +1,17 @@
+$primary-background:#1A2F4E;
+.top-header-bar{
+    color:white;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: $primary-background;
+    height: 5%;
+    ul{
+        list-style-type: none;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            margin: 5px;
+        }
+    }
+}

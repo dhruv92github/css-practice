@@ -1,7 +1,8 @@
 $brand-color1:#B20058;
 $brand-color2:#3454b5;
 $link-color:#B20058;
-$app-background:#40144a;
+$primary-background:#1A2F4E;
+$primary-color:#ffffff;
 $content-background:#ffffff;
 $content-padding:10px;
 $body-font:'verdana','helvetica','sans-sarif';
@@ -10,13 +11,13 @@ $body-font-Size:16px;
 .App{
     font-family:$body-font;
     font-size:$body-font-Size;
-    padding:10px;
-    background-color: $app-background;
+    
+    
     .content{
         // background-color: $content-background;
-        padding:$content-padding;
-        color:white;
-        min-height: 1000px;
+        
+        color:$primary-color;
+        min-height: 768px;
     }
 }
 #brand-1{
@@ -25,14 +26,10 @@ $body-font-Size:16px;
         color:$brand-color2;
     }
 }
-header{
-    border:1px solid black;
-    margin-bottom: 3px;
-    top:0; 
-}
+
 img{
-    height:160px;
-    width: 200px;
+    height:100px;
+    width: 120px;
     border:2px solid white;
     border-radius: 12px;
     margin:5px;
@@ -41,21 +38,28 @@ img{
 .lang-images{
     display:flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding:10px;
+    background-color: $primary-background;
 }
-h2{
+h4{
     text-align: center;
+    font-weight: bold;
+    margin: 10px;
 }
-.jumbotron{
-    background-color: $app-background;
+.heading{
+    font-weight: bold;
+    font-size: 18px;
+}
+.stream-box{
+   background-color: $primary-background;
    text-align: center;
    border: 2px solid white;
    border-radius: 12px;
    padding:10px;
+   margin-top: 5px;
 }
-.footer{
-    background-color: #F0F8FF;
-}
+
 .small{
     font-size: 12px;
     color:lighten(black,40%);

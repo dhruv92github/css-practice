@@ -1,5 +1,10 @@
 
 $link-color:#B20058;
+header{
+    border:1px solid black;
+    margin-bottom: 3px;
+    top:0; 
+}
 ul.header-list-style{
     list-style-type: none;
     padding-right: 5%;
@@ -24,7 +29,7 @@ ul.header-list-style{
 .navigation{
     position:-webkit-sticky;
     position:sticky;
-    top:8px;
+    top:0px;
     display: flex;
     justify-content: space-between;
     background-color: white;

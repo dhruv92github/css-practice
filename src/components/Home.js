@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import {javascript_logo,HTML5_logo,css3} from '../images/Index';
+import {javascript_logo,
+    HTML5_logo,css3,
+    react_logo,redux_logo,
+bootstrap_logo,SQL_logo} from '../images/Index';
 
 
 export default class Home extends Component {
@@ -8,14 +11,22 @@ export default class Home extends Component {
       <div>
         
         <div className="lang-images">
-            <img src={HTML5_logo} alt="HTML5_logo" className="rounded"/>
-            <img src={css3} alt="css3" />
-            <img src={javascript_logo} alt="javascript_logo" />
             
+                <img src={HTML5_logo} alt="HTML5_logo" className="rounded"/>
+                <img src={css3} alt="css3" />
+                <img src={javascript_logo} alt="javascript_logo" />
+                <img src={react_logo} alt="react_logo" className="rounded"/>
+                <img src={redux_logo} alt="redux_logo" />
+                <img src={bootstrap_logo} alt="bootstrap_logo" />
+                <img src={SQL_logo} alt="SQL_logo" />
+                
+            
+            <div>
+            <h4>Get the best links for your favourite Language</h4>
+            </div>
         </div>
-        <h2>Get the best links for your favourite Language</h2>
-        <div className="jumbotron">
-            <h3>Web Development</h3>
+        <div className="stream-box">
+            <p className="heading">Web Development</p>
             <div className="row">
                 <div className="col">
                     <p>React JS</p>
@@ -29,18 +40,33 @@ export default class Home extends Component {
                 <div className="col">
                     <p>CSS 3</p>
                 </div>
+                <div className="col">
+                    <p>Bootstrap</p>
+                </div>
+                <div className="col">
+                    <p>Less</p>
+                </div>
+                <div className="col">
+                    <p>Scss</p>
+                </div>
             </div>
             
         </div>
-        <br />
-        <div className="jumbotron">
-            <h3>Database</h3>
-            <ul className="web-list">
-                <li>MySQL</li>
-                <li>SQL</li>
-                <li>PL-SQL</li>
+        
+        <div className="stream-box">
+        <p className="heading">Database</p>
+            <div className="row">
+                <div className="col">
+                    <p>MySQL</p>
+                </div>
+                <div className="col">
+                    <p>SQL</p>
+                </div>
+                <div className="col">
+                    <p>PL-SQL</p>
+                </div>
                 
-            </ul>
+            </div>
         </div>
         
       </div>

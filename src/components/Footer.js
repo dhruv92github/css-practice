@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import  '../css/Footer.scss';
+import {instagram_logo,} from '../images/Index';
 
  const  Footer=()=> {
   return (
@@ -27,8 +29,12 @@ import {Link} from 'react-router-dom'
       </div>
       <div className="col-sm-4">
       <h5>Follow us on</h5>
-        <p>A website that help to get the all useful links related language 
-            so that professional find less hassel to get the details
+        <p>
+            <i className="fa fa-facebook"></i>
+            <i className="fa fa-twitter"></i>
+            <span>
+                <img src={instagram_logo} alt="instagram_logo" className="follow-img"/>
+            </span>
         </p>
       </div>
     </div>
