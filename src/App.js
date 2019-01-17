@@ -8,6 +8,7 @@ import About from './components/About';
 import TopBar from './components/TopBar';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import ReactJs from './components/ReactJs';
 class App extends Component {
   render() {
     return (
@@ -17,9 +18,11 @@ class App extends Component {
           <Header />
           <div className="content">
               <Route path="/" exact={true} component={Home}  />
-              <Route path="/Web" component={Web} />
+              <Route path="/Web" exact={true} component={Web} />
               <Route path="/Contact" component={Contact} />
               <Route path="/About" component={About} />
+              <Route path="/Web/React" component={ReactJs} />
+
           </div>
           <Footer />  
         </div>

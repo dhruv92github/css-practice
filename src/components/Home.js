@@ -4,18 +4,19 @@ import {javascript_logo,
     react_logo,redux_logo,
 bootstrap_logo,SQL_logo,scss_logo,less_logo} from '../images/Index';
 import '../css/Home.scss';
-
+import {Link} from 'react-router-dom'
 
 export default class Home extends Component {
   render() {
+      console.log(this.props.match);
     return (
-      <div>
+      <div className="home">
         <div className="lang-images">
             
-                <img src={HTML5_logo} alt="HTML5_logo" className="rounded"/>
+                <img src={HTML5_logo} alt="HTML5_logo" />
                 <img src={css3} alt="css3" />
                 <img src={javascript_logo} alt="javascript_logo" />
-                <img src={react_logo} alt="react_logo" className="rounded"/>
+                <img src={react_logo} alt="react_logo" />
                 <img src={redux_logo} alt="redux_logo" />
                 <img src={bootstrap_logo} alt="bootstrap_logo" />
                 <img src={SQL_logo} alt="SQL_logo" />
@@ -30,7 +31,9 @@ export default class Home extends Component {
             <p className="heading">Web Development</p>
             <div className="row">
                 <div className="col">
-                    <p>React JS</p>
+                    <p>
+                      <Link to="/Web/React">React JS</Link>      
+                    </p>
                 </div>
                 <div className="col">
                     <p>JavaScript</p>
