@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import {javascript_logo,
     HTML5_logo,css3,
     react_logo,redux_logo,
-bootstrap_logo,SQL_logo} from '../images/Index';
+bootstrap_logo,SQL_logo,scss_logo,less_logo} from '../images/Index';
+import '../css/Home.scss';
 
 
 export default class Home extends Component {
   render() {
     return (
       <div>
-        
         <div className="lang-images">
             
                 <img src={HTML5_logo} alt="HTML5_logo" className="rounded"/>
@@ -19,11 +19,12 @@ export default class Home extends Component {
                 <img src={redux_logo} alt="redux_logo" />
                 <img src={bootstrap_logo} alt="bootstrap_logo" />
                 <img src={SQL_logo} alt="SQL_logo" />
-                
+                <img src={scss_logo} alt="scss_logo" />
+                <img src={less_logo} alt="less_logo" />
             
             <div>
             <h4>Get the best links for your favourite Language</h4>
-            </div>
+        </div>
         </div>
         <div className="stream-box">
             <p className="heading">Web Development</p>

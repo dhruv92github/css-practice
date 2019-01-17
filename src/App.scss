@@ -5,19 +5,15 @@ $primary-background:#1A2F4E;
 $primary-color:#ffffff;
 $content-background:#ffffff;
 $content-padding:10px;
-$body-font:'verdana','helvetica','sans-sarif';
-$body-font-Size:16px;
+$body-font:'sans-sarif','helvetica','verdana';
+$body-font-Size:1em;
 
 .App{
     font-family:$body-font;
     font-size:$body-font-Size;
-    
-    
     .content{
-        // background-color: $content-background;
-        
         color:$primary-color;
-        min-height: 768px;
+        min-height: 568px;
     }
 }
 #brand-1{
@@ -26,39 +22,11 @@ $body-font-Size:16px;
         color:$brand-color2;
     }
 }
-
-img{
-    height:100px;
-    width: 120px;
-    border:2px solid white;
-    border-radius: 12px;
-    margin:5px;
-    
-}
-.lang-images{
-    display:flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding:10px;
-    background-color: $primary-background;
-}
-h4{
-    text-align: center;
-    font-weight: bold;
-    margin: 10px;
-}
 .heading{
     font-weight: bold;
     font-size: 18px;
 }
-.stream-box{
-   background-color: $primary-background;
-   text-align: center;
-   border: 2px solid white;
-   border-radius: 12px;
-   padding:10px;
-   margin-top: 5px;
-}
+
 
 .small{
     font-size: 12px;

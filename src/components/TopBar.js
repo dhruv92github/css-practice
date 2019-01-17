@@ -13,10 +13,12 @@ const TopBar = () => {
 
             </div>
             <div className="col"> 
+                <div className="container">
                 <ul>
                     <li>Sign Up</li>
                     <li>Sign In</li>
                 </ul>
+                </div>
             </div>
         </div>
 

@@ -6,3 +6,5 @@ export const react_logo = require('./react_logo.png');
 export const redux_logo = require('./redux_logo.png');
 export const bootstrap_logo = require('./bootstrap_logo.png');
 export const SQL_logo = require('./SQL_logo.png');
+export const scss_logo = require('./scss_logo.png');
+export const less_logo = require('./less_logo.png');

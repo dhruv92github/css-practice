@@ -3,10 +3,10 @@ import '../css/header.scss';
 import {Link} from 'react-router-dom'
 export default function Header() {
   return (
-    <div>
+    <div class="sticky-header">
       <header>
             
-            <nav class="navigation">
+            <nav class="navigation container">
               <h2 id="brand-1">Study<span id="brand-2">Links</span> </h2>
               <ul className="header-list-style">
                 <li className="list"> 
