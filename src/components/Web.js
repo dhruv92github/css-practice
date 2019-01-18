@@ -8,9 +8,11 @@ export default class Web extends Component {
     console.log(this.props.match);
     return (
       <div className="container">
-        <div className="web">
-          <h4>Web Development</h4>
-          <p className="heading">JS Libraries</p>
+        <div className="page-box">
+        <h4 >
+            <span className="page-title">Web Development</span>
+          </h4>
+          <p className="topics">JS Libraries</p>
           <ul>
             <li>
              <Link to={`${this.props.match.url}/React`}>React JS</Link>
@@ -27,7 +29,7 @@ export default class Web extends Component {
             </li>
                     
           </ul>
-          <p className="heading"> Markup Language</p>
+          <p className="topics"> Markup Language</p>
           <ul>
           <li>
              <Link to="/Web/React">HTML 5</Link>
@@ -35,7 +37,7 @@ export default class Web extends Component {
             
           </ul>
 
-          <p className="heading">Styling</p>
+          <p className="topics">Styling</p>
           <ul>
             <li>
              <Link to="/Web/React">CSS 3</Link>

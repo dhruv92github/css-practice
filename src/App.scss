@@ -8,9 +8,25 @@ $content-padding:10px;
 $body-font:'sans-sarif','helvetica','verdana';
 $body-font-Size:1em;
 
+.topic-style{
+    background-color:$primary-background;
+    color:white;
+    padding:8px;
+   
+}
+.title-style{
+    padding:3px 8px;
+    color:white;
+    background-color: $link-color;
+}
+
 .App{
     font-family:$body-font;
     font-size:$body-font-Size;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
     .content{
         
         min-height: 568px;
@@ -31,4 +47,19 @@ $body-font-Size:1em;
 .small{
     font-size: 12px;
     color:lighten(black,40%);
+}
+.page-box{
+    box-shadow: 5px 0px 10px #7B7A90;
+    padding:10px 10px;
+    width: 70%;
+    margin: auto;
+
+    .page-title{
+        
+        @extend .title-style;
+    }
+    .topics{
+        @extend .topic-style;
+        margin-top: 5%;
+    }
 }
