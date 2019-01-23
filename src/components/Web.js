@@ -4,56 +4,67 @@ import {Link} from 'react-router-dom'
 
 
 export default class Web extends Component {
+  constructor(){
+    super();
+    this.state={
+      data:[
+        {
+          topic:"JS Libraries",
+          content:[{contentTitle:"React",path:"React"},
+          {contentTitle:"Redux",path:"React"},
+          {contentTitle:"JavaScript",path:"React"},
+          {contentTitle:"Object Oriented JavaScript",path:"React"}
+         ]
+        },
+        {
+          topic:"Markup Language",
+          content:[{contentTitle:"HTML5",path:"React"}]
+        },
+        {
+          topic:"Styling",
+          content:[
+            {contentTitle:"Css3",path:"React"},
+            {contentTitle:"Scss/Sass",path:"React"},
+            {contentTitle:"Less",path:"React"}
+          ]
+        }
+        
+      ]
+    }
+  }
+
+
   render() {
     console.log(this.props.match);
+    
+    var pageContent=this.state.data.map((data)=>{
+      return(<div>
+                <p className="topics">{data.topic}</p>
+                <ul> {data.content.map((content)=>{
+                      return(
+                        <li>
+                          <Link to={`${this.props.match.url}/${content.path}`}>{content.contentTitle}</Link>
+                        </li>
+                      )
+                  })}
+                </ul>
+                </div> 
+              ) 
+            }
+        )
     return (
       <div className="container">
         <div className="page-box">
-        <h4 >
+          <h4 >
             <span className="page-title">Web Development</span>
           </h4>
-          <p className="topics">JS Libraries</p>
-          <ul>
-            <li>
-             <Link to={`${this.props.match.url}/React`}>React JS</Link>
-            </li>
-            <li>
-             <Link to="/Web/React">Redux</Link>
-            </li>
-            <li>
-             <Link to="/Web/React">JavaScript</Link>
-            </li>
-            
-            <li>
-             <Link to="/Web/React">Object Oriented JavaScript</Link>
-            </li>
-                    
-          </ul>
-          <p className="topics"> Markup Language</p>
-          <ul>
-          <li>
-             <Link to="/Web/React">HTML 5</Link>
-            </li>
-            
-          </ul>
+          {pageContent}
 
-          <p className="topics">Styling</p>
-          <ul>
-            <li>
-             <Link to="/Web/React">CSS 3</Link>
-            </li>
-            
-            <li>
-             <Link to="/Web/React">Scss/Sass</Link>
-            </li>
-            <li>
-             <Link to="/Web/React">Less</Link>
-            </li>
-            
-          </ul>
+          
         </div>
 
       </div>
     )
   }
 }
+

@@ -49,10 +49,11 @@ $body-font-Size:1em;
     color:lighten(black,40%);
 }
 .page-box{
-    box-shadow: 5px 0px 10px #7B7A90;
+    box-shadow: 0px 0px 10px #7B7A90;
     padding:10px 10px;
-    width: 70%;
+    width: 75%;
     margin: auto;
+    min-height: 550px;
 
     .page-title{
         

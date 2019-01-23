@@ -1,0 +1,35 @@
+$primary-background:#1A2F4E;
+$text-color:white;
+
+.left-menu{
+    float: left;
+    box-sizing: border-box;
+    
+    a{
+        color: $text-color;
+    }
+
+    ul{
+        list-style-type: none;
+        padding-inline-start: 0px;
+        background-color: $primary-background;
+    }
+    li{
+        color: white;
+        
+        border: 1px solid white;
+        padding:10px;
+    }
+}
+.right-content{
+    display: block;
+    box-sizing: border-box;
+    
+    padding: 10px;
+    
+   
+}
+.page-box{
+    
+   
+}
