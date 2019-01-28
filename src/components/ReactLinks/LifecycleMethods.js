@@ -10,12 +10,11 @@ const LifecycleMethods = () => {
                   <ul>
                       <li>componentWillMount</li>
                       <li>componentDidMount</li>
-                      <li>componentWillUnmount</li>
                       <li>componentWillRecieveProps</li>
                       <li>shouldComponentUpdate</li>
                       <li>componentWillUpdate</li>
                       <li>componentDidUpdate</li>
-                      <li>componentWillUpdate</li>
+                      <li>componentWillUnmount</li>
                   </ul>
               </p>
               
